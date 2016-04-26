@@ -1,0 +1,8 @@
+language: objective-c
+xcode_project: Tuplex.xcodeproj
+xcode_scheme: Tuplex-OSX
+osx_image: xcode7.3
+before_install: true
+install: true
+git:
+  submodules: false
