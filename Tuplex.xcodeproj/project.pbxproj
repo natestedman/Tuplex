@@ -440,6 +440,7 @@
 		4349B2A61CCFAF3D0026B369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,12 +453,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.Tuplex;
 				PRODUCT_NAME = Tuplex;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4349B2A71CCFAF3D0026B369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -476,17 +479,20 @@
 		4349B2A91CCFAF3D0026B369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TuplexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.TuplexTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4349B2AA1CCFAF3D0026B369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TuplexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -498,6 +504,7 @@
 		4349B2C21CCFAF3D0026B369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -511,6 +518,7 @@
 				PRODUCT_NAME = Tuplex;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -518,6 +526,7 @@
 		4349B2C31CCFAF3D0026B369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -539,6 +548,7 @@
 		4349B2C51CCFAF3D0026B369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TuplexTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -546,12 +556,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.TuplexTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4349B2C61CCFAF3D0026B369 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TuplexTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -582,6 +594,7 @@
 				4349B2A71CCFAF3D0026B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4349B2A81CCFAF3D0026B369 /* Build configuration list for PBXNativeTarget "Tuplex-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +603,7 @@
 				4349B2AA1CCFAF3D0026B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4349B2C11CCFAF3D0026B369 /* Build configuration list for PBXNativeTarget "Tuplex-iOS" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +612,7 @@
 				4349B2C31CCFAF3D0026B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4349B2C41CCFAF3D0026B369 /* Build configuration list for PBXNativeTarget "Tuplex-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +621,7 @@
 				4349B2C61CCFAF3D0026B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
