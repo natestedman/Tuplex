@@ -5,10 +5,11 @@
 
 A few useful tuple functions. Currently implemented up to eight-tuples, but could be extended further if necessary.
 
-## `==`
+## Functions
+### `==`
 Swift provides `==` for tuples up to six elements - additional implementations are provided for seven-tuples and eight-tuples.
 
-## `&&`
+### `&&`
 An operator for joining optionals into optional tuples. For example:
 
     let foo: Int? = 1
@@ -19,19 +20,19 @@ An operator for joining optionals into optional tuples. For example:
     foo && baz // nil
     foo && bar && baz // nil
 
-## `drop`
+### `drop`
 Removes the last element from a tuple.
 
     let tuple = (1, 2, 3)
     drop(tuple) // (1, 2)
 
-## `extend`
+### `extend`
 Adds an additional element to a tuple.
 
     let tuple = (1, 2)
     extend(tuple, 3) // (1, 2, 3)
 
-## `unwrap`
+### `unwrap`
 Takes optional arguments and returns an optional tuple of non-optional elements (similar to `&&`).
 
     let foo: Int? = 1
