@@ -11,6 +11,10 @@
 		4349B29C1CCFAF3D0026B369 /* Tuplex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4349B2911CCFAF3D0026B369 /* Tuplex.framework */; };
 		4349B2BA1CCFAF3D0026B369 /* Tuplex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4349B2B01CCFAF3D0026B369 /* Tuplex.framework */; };
 		4349B2C81CCFAF3D0026B369 /* Tuplex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4349B2941CCFAF3D0026B369 /* Tuplex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4349B2CA1CCFAF3D0026B369 /* Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2C91CCFAF3D0026B369 /* Extend.swift */; };
+		4349B2CB1CCFAF3D0026B369 /* Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2C91CCFAF3D0026B369 /* Extend.swift */; };
+		4349B2CD1CCFAF3D0026B369 /* ExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */; };
+		4349B2CE1CCFAF3D0026B369 /* ExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */; };
 		4384D80D1CCEEFA100428DFA /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80C1CCEEFA100428DFA /* Equatable.swift */; };
 		4384D80E1CCEEFA100428DFA /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80C1CCEEFA100428DFA /* Equatable.swift */; };
 		4384D8101CCEF0C600428DFA /* EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80F1CCEF0C600428DFA /* EquatableTests.swift */; };
@@ -42,6 +46,8 @@
 		4349B2A21CCFAF3D0026B369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4349B2B01CCFAF3D0026B369 /* Tuplex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tuplex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4349B2B91CCFAF3D0026B369 /* Tuplex-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tuplex-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4349B2C91CCFAF3D0026B369 /* Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extend.swift; sourceTree = "<group>"; };
+		4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendTests.swift; sourceTree = "<group>"; };
 		4384D80C1CCEEFA100428DFA /* Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		4384D80F1CCEF0C600428DFA /* EquatableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +111,7 @@
 			children = (
 				4349B2941CCFAF3D0026B369 /* Tuplex.h */,
 				4384D80C1CCEEFA100428DFA /* Equatable.swift */,
+				4349B2C91CCFAF3D0026B369 /* Extend.swift */,
 				4349B2961CCFAF3D0026B369 /* Info.plist */,
 			);
 			path = Tuplex;
@@ -114,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4384D80F1CCEF0C600428DFA /* EquatableTests.swift */,
+				4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */,
 				4349B2A21CCFAF3D0026B369 /* Info.plist */,
 			);
 			path = TuplexTests;
@@ -294,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4384D80D1CCEEFA100428DFA /* Equatable.swift in Sources */,
+				4349B2CA1CCFAF3D0026B369 /* Extend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4384D8101CCEF0C600428DFA /* EquatableTests.swift in Sources */,
+				4349B2CD1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4384D80E1CCEEFA100428DFA /* Equatable.swift in Sources */,
+				4349B2CB1CCFAF3D0026B369 /* Extend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4384D8111CCEF0C600428DFA /* EquatableTests.swift in Sources */,
+				4349B2CE1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
