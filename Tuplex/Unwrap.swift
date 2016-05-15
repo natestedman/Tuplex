@@ -19,7 +19,7 @@
 @warn_unused_result
 public func unwrap<A, B>(a: A?, _ b: B?) -> (A, B)?
 {
-    return a && b
+    return a &&& b
 }
 
 /**
@@ -32,7 +32,7 @@ public func unwrap<A, B>(a: A?, _ b: B?) -> (A, B)?
 @warn_unused_result
 public func unwrap<A, B, C>(a: A?, _ b: B?, _ c: C?) -> (A, B, C)?
 {
-    return unwrap(a, b) && c
+    return unwrap(a, b) &&& c
 }
 
 /**
@@ -46,7 +46,7 @@ public func unwrap<A, B, C>(a: A?, _ b: B?, _ c: C?) -> (A, B, C)?
 @warn_unused_result
 public func unwrap<A, B, C, D>(a: A?, _ b: B?, _ c: C?, _ d: D?) -> (A, B, C, D)?
 {
-    return unwrap(a, b, c) && d
+    return unwrap(a, b, c) &&& d
 }
 
 /**
@@ -61,7 +61,7 @@ public func unwrap<A, B, C, D>(a: A?, _ b: B?, _ c: C?, _ d: D?) -> (A, B, C, D)
 @warn_unused_result
 public func unwrap<A, B, C, D, E>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?) -> (A, B, C, D, E)?
 {
-    return unwrap(a, b, c, d) && e
+    return unwrap(a, b, c, d) &&& e
 }
 
 /**
@@ -77,7 +77,7 @@ public func unwrap<A, B, C, D, E>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?) -> 
 @warn_unused_result
 public func unwrap<A, B, C, D, E, F>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?) -> (A, B, C, D, E, F)?
 {
-    return unwrap(a, b, c, d, e) && f
+    return unwrap(a, b, c, d, e) &&& f
 }
 
 /**
@@ -95,7 +95,7 @@ public func unwrap<A, B, C, D, E, F>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, 
 public func unwrap<A, B, C, D, E, F, G>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?)
     -> (A, B, C, D, E, F, G)?
 {
-    return unwrap(a, b, c, d, e, f) && g
+    return unwrap(a, b, c, d, e, f) &&& g
 }
 
 /**
@@ -114,5 +114,5 @@ public func unwrap<A, B, C, D, E, F, G>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E
 public func unwrap<A, B, C, D, E, F, G, H>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?, _ h: H?)
     -> (A, B, C, D, E, F, G, H)?
 {
-    return unwrap(a, b, c, d, e, f, g) && h
+    return unwrap(a, b, c, d, e, f, g) &&& h
 }

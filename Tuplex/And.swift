@@ -10,6 +10,8 @@
 
 // MARK: - Joining Optionals
 
+infix operator &&& { associativity left precedence 120 }
+
 /**
  Accepts two optionals, returning a two-tuple if both are non-`nil`, and `nil` if either is `nil`.
 
@@ -17,7 +19,7 @@
  - parameter rhs: The right optional.
  */
 @warn_unused_result
-public func &&<A, Right>(lhs: A?, rhs: Right?) -> (A, Right)?
+public func &&&<A, Right>(lhs: A?, rhs: Right?) -> (A, Right)?
 {
     if let l = lhs, r = rhs
     {
@@ -37,9 +39,9 @@ public func &&<A, Right>(lhs: A?, rhs: Right?) -> (A, Right)?
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, Right>(lhs: (A, B)?, rhs: Right?) -> (A, B, Right)?
+public func &&&<A, B, Right>(lhs: (A, B)?, rhs: Right?) -> (A, B, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
 
 /**
@@ -50,9 +52,9 @@ public func &&<A, B, Right>(lhs: (A, B)?, rhs: Right?) -> (A, B, Right)?
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, C, Right>(lhs: (A, B, C)?, rhs: Right?) -> (A, B, C, Right)?
+public func &&&<A, B, C, Right>(lhs: (A, B, C)?, rhs: Right?) -> (A, B, C, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
 
 /**
@@ -63,9 +65,9 @@ public func &&<A, B, C, Right>(lhs: (A, B, C)?, rhs: Right?) -> (A, B, C, Right)
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, C, D, Right>(lhs: (A, B, C, D)?, rhs: Right?) -> (A, B, C, D, Right)?
+public func &&&<A, B, C, D, Right>(lhs: (A, B, C, D)?, rhs: Right?) -> (A, B, C, D, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
 
 /**
@@ -76,9 +78,9 @@ public func &&<A, B, C, D, Right>(lhs: (A, B, C, D)?, rhs: Right?) -> (A, B, C, 
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, C, D, E, Right>(lhs: (A, B, C, D, E)?, rhs: Right?) -> (A, B, C, D, E, Right)?
+public func &&&<A, B, C, D, E, Right>(lhs: (A, B, C, D, E)?, rhs: Right?) -> (A, B, C, D, E, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
 
 /**
@@ -89,9 +91,9 @@ public func &&<A, B, C, D, E, Right>(lhs: (A, B, C, D, E)?, rhs: Right?) -> (A, 
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, C, D, E, F, Right>(lhs: (A, B, C, D, E, F)?, rhs: Right?) -> (A, B, C, D, E, F, Right)?
+public func &&&<A, B, C, D, E, F, Right>(lhs: (A, B, C, D, E, F)?, rhs: Right?) -> (A, B, C, D, E, F, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
 
 /**
@@ -102,7 +104,7 @@ public func &&<A, B, C, D, E, F, Right>(lhs: (A, B, C, D, E, F)?, rhs: Right?) -
  - parameter rhs: The optional value.
  */
 @warn_unused_result
-public func &&<A, B, C, D, E, F, G, Right>(lhs: (A, B, C, D, E, F, G)?, rhs: Right?) -> (A, B, C, D, E, F, G, Right)?
+public func &&&<A, B, C, D, E, F, G, Right>(lhs: (A, B, C, D, E, F, G)?, rhs: Right?) -> (A, B, C, D, E, F, G, Right)?
 {
-    return (lhs && rhs).map(extend)
+    return (lhs &&& rhs).map(extend)
 }
