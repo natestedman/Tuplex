@@ -29,6 +29,10 @@
 		4384D8221CCF15A000428DFA /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D8201CCF15A000428DFA /* Unwrap.swift */; };
 		4384D8271CCF15A000428DFA /* UnwrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D8231CCF15A000428DFA /* UnwrapTests.swift */; };
 		4384D8281CCF15A000428DFA /* UnwrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D8231CCF15A000428DFA /* UnwrapTests.swift */; };
+		438AAF681D81A95900F1CD96 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AAF671D81A95900F1CD96 /* Zip.swift */; };
+		438AAF691D81A95900F1CD96 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AAF671D81A95900F1CD96 /* Zip.swift */; };
+		438AAF6B1D81AACD00F1CD96 /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AAF6A1D81AACD00F1CD96 /* ZipTests.swift */; };
+		438AAF6C1D81AACD00F1CD96 /* ZipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AAF6A1D81AACD00F1CD96 /* ZipTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,8 @@
 		4384D81A1CCEF6A700428DFA /* And.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = And.swift; sourceTree = "<group>"; };
 		4384D8201CCF15A000428DFA /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		4384D8231CCF15A000428DFA /* UnwrapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwrapTests.swift; sourceTree = "<group>"; };
+		438AAF671D81A95900F1CD96 /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
+		438AAF6A1D81AACD00F1CD96 /* ZipTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				4384D80C1CCEEFA100428DFA /* Equatable.swift */,
 				4349B2C91CCFAF3D0026B369 /* Extend.swift */,
 				4384D8201CCF15A000428DFA /* Unwrap.swift */,
+				438AAF671D81A95900F1CD96 /* Zip.swift */,
 				4349B2961CCFAF3D0026B369 /* Info.plist */,
 			);
 			path = Tuplex;
@@ -142,6 +149,7 @@
 				4384D80F1CCEF0C600428DFA /* EquatableTests.swift */,
 				4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */,
 				4384D8231CCF15A000428DFA /* UnwrapTests.swift */,
+				438AAF6A1D81AACD00F1CD96 /* ZipTests.swift */,
 				4349B2A21CCFAF3D0026B369 /* Info.plist */,
 			);
 			path = TuplexTests;
@@ -326,6 +334,7 @@
 				4349B2CA1CCFAF3D0026B369 /* Extend.swift in Sources */,
 				4384D8161CCEF49200428DFA /* Drop.swift in Sources */,
 				4384D81B1CCEF6A700428DFA /* And.swift in Sources */,
+				438AAF681D81A95900F1CD96 /* Zip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +345,7 @@
 				4384D8271CCF15A000428DFA /* UnwrapTests.swift in Sources */,
 				4384D8101CCEF0C600428DFA /* EquatableTests.swift in Sources */,
 				4384D8181CCEF54800428DFA /* DropTests.swift in Sources */,
+				438AAF6B1D81AACD00F1CD96 /* ZipTests.swift in Sources */,
 				4349B2CD1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +359,7 @@
 				4349B2CB1CCFAF3D0026B369 /* Extend.swift in Sources */,
 				4384D8151CCEF49100428DFA /* Drop.swift in Sources */,
 				4384D81C1CCEF6A700428DFA /* And.swift in Sources */,
+				438AAF691D81A95900F1CD96 /* Zip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +370,7 @@
 				4384D8281CCF15A000428DFA /* UnwrapTests.swift in Sources */,
 				4384D8111CCEF0C600428DFA /* EquatableTests.swift in Sources */,
 				4384D8191CCEF54800428DFA /* DropTests.swift in Sources */,
+				438AAF6C1D81AACD00F1CD96 /* ZipTests.swift in Sources */,
 				4349B2CE1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
