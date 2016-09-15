@@ -42,6 +42,9 @@ Takes optional arguments and returns an optional tuple of non-optional elements 
     unwrap(foo, bar) // (1, 2)
     unwrap(foo, bar, baz) // nil
 
+### `zip`
+Swift provides `zip` for two sequences - additional implementations are provided for up to eight sequences.
+
 ## Installation
 
 Add:
