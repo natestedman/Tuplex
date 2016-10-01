@@ -15,6 +15,10 @@
 		4349B2CB1CCFAF3D0026B369 /* Extend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2C91CCFAF3D0026B369 /* Extend.swift */; };
 		4349B2CD1CCFAF3D0026B369 /* ExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */; };
 		4349B2CE1CCFAF3D0026B369 /* ExtendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */; };
+		435399291DA54873002260EE /* Prepend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435399281DA54873002260EE /* Prepend.swift */; };
+		4353992A1DA54873002260EE /* Prepend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435399281DA54873002260EE /* Prepend.swift */; };
+		4353992C1DA54926002260EE /* PrependTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353992B1DA54926002260EE /* PrependTests.swift */; };
+		4353992D1DA54926002260EE /* PrependTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353992B1DA54926002260EE /* PrependTests.swift */; };
 		4384D80D1CCEEFA100428DFA /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80C1CCEEFA100428DFA /* Equatable.swift */; };
 		4384D80E1CCEEFA100428DFA /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80C1CCEEFA100428DFA /* Equatable.swift */; };
 		4384D8101CCEF0C600428DFA /* EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384D80F1CCEF0C600428DFA /* EquatableTests.swift */; };
@@ -62,6 +66,8 @@
 		4349B2B91CCFAF3D0026B369 /* Tuplex-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tuplex-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4349B2C91CCFAF3D0026B369 /* Extend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extend.swift; sourceTree = "<group>"; };
 		4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendTests.swift; sourceTree = "<group>"; };
+		435399281DA54873002260EE /* Prepend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prepend.swift; sourceTree = "<group>"; };
+		4353992B1DA54926002260EE /* PrependTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrependTests.swift; sourceTree = "<group>"; };
 		4384D80C1CCEEFA100428DFA /* Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
 		4384D80F1CCEF0C600428DFA /* EquatableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableTests.swift; sourceTree = "<group>"; };
 		4384D8121CCEF42500428DFA /* Drop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				4384D8121CCEF42500428DFA /* Drop.swift */,
 				4384D80C1CCEEFA100428DFA /* Equatable.swift */,
 				4349B2C91CCFAF3D0026B369 /* Extend.swift */,
+				435399281DA54873002260EE /* Prepend.swift */,
 				4384D8201CCF15A000428DFA /* Unwrap.swift */,
 				438AAF671D81A95900F1CD96 /* Zip.swift */,
 				4349B2961CCFAF3D0026B369 /* Info.plist */,
@@ -148,6 +155,7 @@
 				4384D8171CCEF54800428DFA /* DropTests.swift */,
 				4384D80F1CCEF0C600428DFA /* EquatableTests.swift */,
 				4349B2CC1CCFAF3D0026B369 /* ExtendTests.swift */,
+				4353992B1DA54926002260EE /* PrependTests.swift */,
 				4384D8231CCF15A000428DFA /* UnwrapTests.swift */,
 				438AAF6A1D81AACD00F1CD96 /* ZipTests.swift */,
 				4349B2A21CCFAF3D0026B369 /* Info.plist */,
@@ -337,6 +345,7 @@
 				4384D8161CCEF49200428DFA /* Drop.swift in Sources */,
 				4384D81B1CCEF6A700428DFA /* And.swift in Sources */,
 				438AAF681D81A95900F1CD96 /* Zip.swift in Sources */,
+				435399291DA54873002260EE /* Prepend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +355,7 @@
 			files = (
 				4384D8271CCF15A000428DFA /* UnwrapTests.swift in Sources */,
 				4384D8101CCEF0C600428DFA /* EquatableTests.swift in Sources */,
+				4353992C1DA54926002260EE /* PrependTests.swift in Sources */,
 				4384D8181CCEF54800428DFA /* DropTests.swift in Sources */,
 				438AAF6B1D81AACD00F1CD96 /* ZipTests.swift in Sources */,
 				4349B2CD1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,
@@ -362,6 +372,7 @@
 				4384D8151CCEF49100428DFA /* Drop.swift in Sources */,
 				4384D81C1CCEF6A700428DFA /* And.swift in Sources */,
 				438AAF691D81A95900F1CD96 /* Zip.swift in Sources */,
+				4353992A1DA54873002260EE /* Prepend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +382,7 @@
 			files = (
 				4384D8281CCF15A000428DFA /* UnwrapTests.swift in Sources */,
 				4384D8111CCEF0C600428DFA /* EquatableTests.swift in Sources */,
+				4353992D1DA54926002260EE /* PrependTests.swift in Sources */,
 				4384D8191CCEF54800428DFA /* DropTests.swift in Sources */,
 				438AAF6C1D81AACD00F1CD96 /* ZipTests.swift in Sources */,
 				4349B2CE1CCFAF3D0026B369 /* ExtendTests.swift in Sources */,

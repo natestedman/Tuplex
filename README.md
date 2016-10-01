@@ -32,6 +32,12 @@ Adds an additional element to a tuple.
     let tuple = (1, 2)
     extend(tuple, 3) // (1, 2, 3)
 
+### `prepend`
+Adds an additional element to the start of a tuple.
+
+    let tuple = (2, 3)
+    prepend(1, tuple) // (1, 2, 3)
+
 ### `unwrap`
 Takes optional arguments and returns an optional tuple of non-optional elements (similar to `&&`).
 
