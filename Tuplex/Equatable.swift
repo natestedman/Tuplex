@@ -18,7 +18,7 @@
  - parameter lhs: The left side tuple.
  - parameter rhs: The right side tuple.
  */
-@warn_unused_result
+
 public func ==
     <A: Equatable, B: Equatable, C: Equatable, D: Equatable, E: Equatable, F: Equatable, G: Equatable>
     (lhs: (A, B, C, D, E, F, G), rhs: (A, B, C, D, E, F, G)) -> Bool
@@ -34,7 +34,7 @@ public func ==
  - parameter lhs: The left side tuple.
  - parameter rhs: The right side tuple.
  */
-@warn_unused_result
+
 public func ==
     <A: Equatable, B: Equatable, C: Equatable, D: Equatable, E: Equatable, F: Equatable, G: Equatable, H: Equatable>
     (lhs: (A, B, C, D, E, F, G, H), rhs: (A, B, C, D, E, F, G, H)) -> Bool

@@ -16,10 +16,10 @@
  - parameter a: The first argument.
  - parameter b: The second argument.
  */
-@warn_unused_result
-public func unwrap<A, B>(a: A?, _ b: B?) -> (A, B)?
+
+public func unwrap<A, B>(_ a: A?, _ b: B?) -> (A, B)?
 {
-    if let l = a, r = b
+    if let l = a, let r = b
     {
         return (l, r)
     }
@@ -36,8 +36,8 @@ public func unwrap<A, B>(a: A?, _ b: B?) -> (A, B)?
  - parameter b: The second argument.
  - parameter c: The third argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C>(a: A?, _ b: B?, _ c: C?) -> (A, B, C)?
+
+public func unwrap<A, B, C>(_ a: A?, _ b: B?, _ c: C?) -> (A, B, C)?
 {
     return unwrap(unwrap(a, b), c).map(extend)
 }
@@ -50,8 +50,8 @@ public func unwrap<A, B, C>(a: A?, _ b: B?, _ c: C?) -> (A, B, C)?
  - parameter c: The third argument.
  - parameter d: The fourth argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C, D>(a: A?, _ b: B?, _ c: C?, _ d: D?) -> (A, B, C, D)?
+
+public func unwrap<A, B, C, D>(_ a: A?, _ b: B?, _ c: C?, _ d: D?) -> (A, B, C, D)?
 {
     return unwrap(unwrap(a, b, c), d).map(extend)
 }
@@ -65,8 +65,8 @@ public func unwrap<A, B, C, D>(a: A?, _ b: B?, _ c: C?, _ d: D?) -> (A, B, C, D)
  - parameter d: The fourth argument.
  - parameter e: The fifth argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C, D, E>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?) -> (A, B, C, D, E)?
+
+public func unwrap<A, B, C, D, E>(_ a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?) -> (A, B, C, D, E)?
 {
     return unwrap(unwrap(a, b, c, d), e).map(extend)
 }
@@ -81,8 +81,8 @@ public func unwrap<A, B, C, D, E>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?) -> 
  - parameter e: The fifth argument.
  - parameter f: The sixth argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C, D, E, F>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?) -> (A, B, C, D, E, F)?
+
+public func unwrap<A, B, C, D, E, F>(_ a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?) -> (A, B, C, D, E, F)?
 {
     return unwrap(unwrap(a, b, c, d, e), f).map(extend)
 }
@@ -98,8 +98,8 @@ public func unwrap<A, B, C, D, E, F>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, 
  - parameter f: The sixth argument.
  - parameter g: The seventh argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C, D, E, F, G>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?)
+
+public func unwrap<A, B, C, D, E, F, G>(_ a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?)
     -> (A, B, C, D, E, F, G)?
 {
     return unwrap(unwrap(a, b, c, d, e, f), g).map(extend)
@@ -117,8 +117,8 @@ public func unwrap<A, B, C, D, E, F, G>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E
  - parameter g: The seventh argument.
  - parameter h: The eighth argument.
  */
-@warn_unused_result
-public func unwrap<A, B, C, D, E, F, G, H>(a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?, _ h: H?)
+
+public func unwrap<A, B, C, D, E, F, G, H>(_ a: A?, _ b: B?, _ c: C?, _ d: D?, _ e: E?, _ f: F?, _ g: G?, _ h: H?)
     -> (A, B, C, D, E, F, G, H)?
 {
     return unwrap(unwrap(a, b, c, d, e, f, g), h).map(extend)

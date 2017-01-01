@@ -17,9 +17,9 @@
  - parameter b: The second sequence.
  - parameter c: The third sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType>(a: A, _ b: B, _ c: C)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence>(_ a: A, _ b: B, _ c: C)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b), c).lazy.map(extend))
 }
@@ -32,9 +32,9 @@ public func zip<A: SequenceType, B: SequenceType, C: SequenceType>(a: A, _ b: B,
  - parameter c: The third sequence.
  - parameter d: The fourth sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceType>(a: A, _ b: B, _ c: C, _ d: D)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element, D.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence>(_ a: A, _ b: B, _ c: C, _ d: D)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element, D.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b, c), d).lazy.map(extend))
 }
@@ -48,10 +48,10 @@ public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceTy
  - parameter d: The fourth sequence.
  - parameter e: The fifth sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceType, E: SequenceType>
-    (a: A, _ b: B, _ c: C, _ d: D, _ e: E)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element, D.Generator.Element, E.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E: Sequence>
+    (_ a: A, _ b: B, _ c: C, _ d: D, _ e: E)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element, D.Iterator.Element, E.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b, c, d), e).lazy.map(extend))
 }
@@ -66,10 +66,10 @@ public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceTy
  - parameter e: The fifth sequence.
  - parameter f: The sixth sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceType, E: SequenceType, F: SequenceType>
-    (a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element, D.Generator.Element, E.Generator.Element, F.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E: Sequence, F: Sequence>
+    (_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element, D.Iterator.Element, E.Iterator.Element, F.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b, c, d, e), f).lazy.map(extend))
 }
@@ -85,10 +85,10 @@ public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceTy
  - parameter f: The sixth sequence.
  - parameter g: The seventh sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceType, E: SequenceType, F: SequenceType, G: SequenceType>
-    (a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element, D.Generator.Element, E.Generator.Element, F.Generator.Element, G.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E: Sequence, F: Sequence, G: Sequence>
+    (_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element, D.Iterator.Element, E.Iterator.Element, F.Iterator.Element, G.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b, c, d, e, f), g).lazy.map(extend))
 }
@@ -105,10 +105,10 @@ public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceTy
  - parameter g: The seventh sequence.
  - parameter h: The eight sequence.
  */
-@warn_unused_result
-public func zip<A: SequenceType, B: SequenceType, C: SequenceType, D: SequenceType, E: SequenceType, F: SequenceType, G: SequenceType, H: SequenceType>
-    (a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H)
-    -> AnySequence<(A.Generator.Element, B.Generator.Element, C.Generator.Element, D.Generator.Element, E.Generator.Element, F.Generator.Element, G.Generator.Element, H.Generator.Element)>
+
+public func zip<A: Sequence, B: Sequence, C: Sequence, D: Sequence, E: Sequence, F: Sequence, G: Sequence, H: Sequence>
+    (_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H)
+    -> AnySequence<(A.Iterator.Element, B.Iterator.Element, C.Iterator.Element, D.Iterator.Element, E.Iterator.Element, F.Iterator.Element, G.Iterator.Element, H.Iterator.Element)>
 {
     return AnySequence(zip(zip(a, b, c, d, e, f, g), h).lazy.map(extend))
 }

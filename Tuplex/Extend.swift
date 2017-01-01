@@ -16,8 +16,8 @@
  - parameter tuple: The two-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, New>(tuple: (A, B), _ new: New) -> (A, B, New)
+
+public func extend<A, B, New>(_ tuple: (A, B), _ new: New) -> (A, B, New)
 {
     return (tuple.0, tuple.1, new)
 }
@@ -28,8 +28,8 @@ public func extend<A, B, New>(tuple: (A, B), _ new: New) -> (A, B, New)
  - parameter tuple: The three-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, C, New>(tuple: (A, B, C), _ new: New) -> (A, B, C, New)
+
+public func extend<A, B, C, New>(_ tuple: (A, B, C), _ new: New) -> (A, B, C, New)
 {
     return (tuple.0, tuple.1, tuple.2, new)
 }
@@ -40,8 +40,8 @@ public func extend<A, B, C, New>(tuple: (A, B, C), _ new: New) -> (A, B, C, New)
  - parameter tuple: The four-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, C, D, New>(tuple: (A, B, C, D), _ new: New) -> (A, B, C, D, New)
+
+public func extend<A, B, C, D, New>(_ tuple: (A, B, C, D), _ new: New) -> (A, B, C, D, New)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, new)
 }
@@ -52,8 +52,8 @@ public func extend<A, B, C, D, New>(tuple: (A, B, C, D), _ new: New) -> (A, B, C
  - parameter tuple: The five-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, C, D, E, New>(tuple: (A, B, C, D, E), _ new: New)
+
+public func extend<A, B, C, D, E, New>(_ tuple: (A, B, C, D, E), _ new: New)
     -> (A, B, C, D, E, New)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, new)
@@ -65,8 +65,8 @@ public func extend<A, B, C, D, E, New>(tuple: (A, B, C, D, E), _ new: New)
  - parameter tuple: The six-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, C, D, E, F, New>(tuple: (A, B, C, D, E, F), _ new: New)
+
+public func extend<A, B, C, D, E, F, New>(_ tuple: (A, B, C, D, E, F), _ new: New)
     -> (A, B, C, D, E, F, New)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5, new)
@@ -78,8 +78,8 @@ public func extend<A, B, C, D, E, F, New>(tuple: (A, B, C, D, E, F), _ new: New)
  - parameter tuple: The seven-tuple.
  - parameter new:   The new element to append.
  */
-@warn_unused_result
-public func extend<A, B, C, D, E, F, G, New>(tuple: (A, B, C, D, E, F, G), _ new: New)
+
+public func extend<A, B, C, D, E, F, G, New>(_ tuple: (A, B, C, D, E, F, G), _ new: New)
     -> (A, B, C, D, E, F, G, New)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5, tuple.6, new)

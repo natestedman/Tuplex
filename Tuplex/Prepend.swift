@@ -16,8 +16,8 @@
  - parameter new:   The new element to prepend.
  - parameter tuple: The two-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, New>(new: New, _ tuple: (A, B)) -> (New, A, B)
+
+public func prepend<A, B, New>(_ new: New, _ tuple: (A, B)) -> (New, A, B)
 {
     return (new, tuple.0, tuple.1)
 }
@@ -28,8 +28,8 @@ public func prepend<A, B, New>(new: New, _ tuple: (A, B)) -> (New, A, B)
  - parameter new:   The new element to prepend.
  - parameter tuple: The three-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, C, New>(new: New, _ tuple: (A, B, C)) -> (New, A, B, C)
+
+public func prepend<A, B, C, New>(_ new: New, _ tuple: (A, B, C)) -> (New, A, B, C)
 {
     return (new, tuple.0, tuple.1, tuple.2)
 }
@@ -40,8 +40,8 @@ public func prepend<A, B, C, New>(new: New, _ tuple: (A, B, C)) -> (New, A, B, C
  - parameter new:   The new element to prepend.
  - parameter tuple: The four-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, C, D, New>(new: New, _ tuple: (A, B, C, D)) -> (New, A, B, C, D)
+
+public func prepend<A, B, C, D, New>(_ new: New, _ tuple: (A, B, C, D)) -> (New, A, B, C, D)
 {
     return (new, tuple.0, tuple.1, tuple.2, tuple.3)
 }
@@ -52,8 +52,8 @@ public func prepend<A, B, C, D, New>(new: New, _ tuple: (A, B, C, D)) -> (New, A
  - parameter new:   The new element to prepend.
  - parameter tuple: The five-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, C, D, E, New>(new: New, _ tuple: (A, B, C, D, E))
+
+public func prepend<A, B, C, D, E, New>(_ new: New, _ tuple: (A, B, C, D, E))
     -> (New, A, B, C, D, E)
 {
     return (new, tuple.0, tuple.1, tuple.2, tuple.3, tuple.4)
@@ -65,8 +65,8 @@ public func prepend<A, B, C, D, E, New>(new: New, _ tuple: (A, B, C, D, E))
  - parameter new:   The new element to prepend.
  - parameter tuple: The six-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, C, D, E, F, New>(new: New, _ tuple: (A, B, C, D, E, F))
+
+public func prepend<A, B, C, D, E, F, New>(_ new: New, _ tuple: (A, B, C, D, E, F))
     -> (New, A, B, C, D, E, F)
 {
     return (new, tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5)
@@ -78,8 +78,8 @@ public func prepend<A, B, C, D, E, F, New>(new: New, _ tuple: (A, B, C, D, E, F)
  - parameter new:   The new element to prepend.
  - parameter tuple: The seven-tuple.
  */
-@warn_unused_result
-public func prepend<A, B, C, D, E, F, G, New>(new: New, _ tuple: (A, B, C, D, E, F, G))
+
+public func prepend<A, B, C, D, E, F, G, New>(_ new: New, _ tuple: (A, B, C, D, E, F, G))
     -> (New, A, B, C, D, E, F, G)
 {
     return (new, tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5, tuple.6)

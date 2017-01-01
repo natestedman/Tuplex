@@ -15,8 +15,8 @@
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C>(tuple: (A, B, C)) -> (A, B)
+
+public func drop<A, B, C>(_ tuple: (A, B, C)) -> (A, B)
 {
     return (tuple.0, tuple.1)
 }
@@ -26,8 +26,8 @@ public func drop<A, B, C>(tuple: (A, B, C)) -> (A, B)
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C, D>(tuple: (A, B, C, D)) -> (A, B, C)
+
+public func drop<A, B, C, D>(_ tuple: (A, B, C, D)) -> (A, B, C)
 {
     return (tuple.0, tuple.1, tuple.2)
 }
@@ -37,8 +37,8 @@ public func drop<A, B, C, D>(tuple: (A, B, C, D)) -> (A, B, C)
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C, D, E>(tuple: (A, B, C, D, E)) -> (A, B, C, D)
+
+public func drop<A, B, C, D, E>(_ tuple: (A, B, C, D, E)) -> (A, B, C, D)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3)
 }
@@ -48,8 +48,8 @@ public func drop<A, B, C, D, E>(tuple: (A, B, C, D, E)) -> (A, B, C, D)
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C, D, E, F>(tuple: (A, B, C, D, E, F)) -> (A, B, C, D, E)
+
+public func drop<A, B, C, D, E, F>(_ tuple: (A, B, C, D, E, F)) -> (A, B, C, D, E)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4)
 }
@@ -59,8 +59,8 @@ public func drop<A, B, C, D, E, F>(tuple: (A, B, C, D, E, F)) -> (A, B, C, D, E)
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C, D, E, F, G>(tuple: (A, B, C, D, E, F, G)) -> (A, B, C, D, E, F)
+
+public func drop<A, B, C, D, E, F, G>(_ tuple: (A, B, C, D, E, F, G)) -> (A, B, C, D, E, F)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5)
 }
@@ -70,8 +70,8 @@ public func drop<A, B, C, D, E, F, G>(tuple: (A, B, C, D, E, F, G)) -> (A, B, C,
 
  - parameter tuple: The input tuple.
  */
-@warn_unused_result
-public func drop<A, B, C, D, E, F, G, H>(tuple: (A, B, C, D, E, F, G, H))
+
+public func drop<A, B, C, D, E, F, G, H>(_ tuple: (A, B, C, D, E, F, G, H))
     -> (A, B, C, D, E, F, G)
 {
     return (tuple.0, tuple.1, tuple.2, tuple.3, tuple.4, tuple.5, tuple.6)
