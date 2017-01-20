@@ -28,14 +28,14 @@ Adds an additional element to the start of a tuple.
     prepend(1, tuple) // (1, 2, 3)
 
 ### `unwrap`
-Takes optional arguments and returns an optional tuple of non-optional elements (similar to `&&`).
+Takes optional arguments and returns an optional tuple of non-optional elements.
 
     let foo: Int? = 1
     let bar: Int? = 2
     let baz: Int? = nil
     
-    unwrap(foo, bar) // (1, 2)
-    unwrap(foo, bar, baz) // nil
+    unwrap(foo, bar) // .some((1, 2))
+    unwrap(foo, bar, baz) // .none
 
 ### `zip`
 Swift provides `zip` for two sequences - additional implementations are provided for up to eight sequences.
