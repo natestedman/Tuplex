@@ -9,6 +9,12 @@ A few useful tuple functions. Currently implemented up to eight-tuples, but coul
 ### `==`
 Swift provides `==` for tuples up to six elements - additional implementations are provided for seven-tuples and eight-tuples.
 
+### `Array.init`
+Converts N-tuples (with all items of the same type) to an `Array` of N elements.
+
+    let tuple = (1, 2, 3, 4)
+    Array(tuple) // [1, 2, 3, 4]
+
 ### `drop`
 Removes the last element from a tuple.
 
