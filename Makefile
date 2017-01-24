@@ -1,4 +1,4 @@
-XCODE_COMMAND=$(shell { command -v xctool || command -v xcodebuild; } 2>/dev/null)
+XCODE_COMMAND=xcodebuild
 XCODE_NAME=Tuplex
 XCODE_GENERIC_FLAGS=-project '$(XCODE_NAME).xcodeproj'
 XCODE_OSX_FLAGS=-scheme '$(XCODE_NAME)-OSX'
